@@ -1,0 +1,238 @@
+
+
+
+
+body {
+  background-color: #091612;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "Sofia", sans-serif;
+}
+
+#c1,
+#c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+#c1 {
+  z-index: -11;
+}
+#c2 {
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.snowglobe {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color:#ebeaf0;;
+  border: 2px solid #d7d5e1;;
+  z-index: -30;
+}
+
+.snowglobe:before {
+  position: absolute;
+  content: "";
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+  background: #ffffff;
+}
+
+.snowglobe:after {
+  position: absolute;
+  content: "";
+  height: 280px;
+  width: 290px;
+  border-radius: 50%;
+  top: 17px;
+  background: #ebeaf0;;
+}
+
+.base {
+  position: relative;
+  border-bottom: 50px solid #5e1620;;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: 0;
+  width: 242px;
+  margin-top: -60px;
+  z-index: -10;
+  align-self: center;
+}
+
+.base:after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  left: -10px;
+  width: 262px;
+  height: 50px;
+  border-radius: 125px / 25px;
+  background: #5e1620;;
+}
+
+.baseTop {
+  background-color: #ffffff;
+  width: 242px;
+  height: 40px;
+  border-radius: 125px / 20px;
+  margin-top: -72px;
+  box-sizing: border-box;
+  border-bottom: 8px solid #ebeaf0;;
+  z-index: -10;
+  align-self: center;
+}
+
+.baseShadow {
+  position: absolute;
+  background-color: #9d2535;;
+  width: 275px;
+  height: 60px;
+  border-radius: 130px / 30px;
+  top: 270px;
+  z-index: -40;
+  align-self: center;
+}
+
+.tree {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-bottom: 70px solid #317c69;
+  margin-top: 67px;
+  margin-left: -80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tree:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid #265f50;
+}
+
+.tree4 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 100px solid #1a4237;;
+  margin-top: 65px;
+  margin-left: -50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tree4:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 30px solid transparent;
+  border-bottom: 100px solid  #0f2620;;
+}
+
+.tree2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid #1a4237;;
+  margin-top: 67px;
+  margin-left: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tree2:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid #0f2620;
+}
+
+.tree3 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-bottom: 80px solid #265f50;
+  margin-top: 69px;
+  margin-left: -20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tree3:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 20px solid transparent;
+  border-bottom: 80px solid #317c69;
+}
+
+.btn {
+  position: absolute;
+  top: 410px;
+  left: 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 55px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.4s ease;
+  transform: perspective(0) translate(-50%, -50%);
+  border-radius: 50px;
+  border: #5e1620;
+  background: #5e1620;
+  color: #ebeaf0;
+  font-size: 25px;  
+  font-family: "Sofia", sans-serif;
+}
+
+.btn:hover {
+  border: #ebeaf0;
+  background: #ebeaf0;
+  color: #5e1620;
+}
+
+.gift-text {
+  position: absolute;
+  top: -140px;
+  display: none;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
